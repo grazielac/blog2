@@ -5,18 +5,18 @@ import lovenote from "../public/lovenote.png";
 export default function Home() {
   const posts = [
     {
-        title:"My trip to barcelona",
-        image: lovenote,
-        description:"Hey playboy it's about time",
-        author:"Graziela Caringal",
-        date:"October 24, 2025"
+      title: "My trip to barcelona",
+      image: lovenote,
+      description: "Hey playboy it's about time",
+      author: "Graziela Caringal",
+      date: "October 24, 2025",
     },
-     {
-        title:"My trip to barcelona",
-        image: lovenote,
-        description:"Hey playboy it's about time",
-        author:"Graziela Caringal",
-        date:"October 24, 2025"
+    {
+      title: "My trip to barcelona",
+      image: lovenote,
+      description: "Hey playboy it's about time",
+      author: "Graziela Caringal",
+      date: "October 24, 2025",
     },
   ];
 
@@ -24,16 +24,17 @@ export default function Home() {
     <>
       <Nav />
       <main className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-10">
-        {posts.map((post) (
-        <BlogCard
-          title={posts.title}
-          image={posts.image}
-          description={posts.description}
-          author={posts.author}
-          date={posts.date}
-        />
+        {posts.map((post, index) => (
+          <BlogCard
+            key={index}
+            title={post.title}
+            image={post.image}
+            description={post.description}
+            author={post.author}
+            date={post.date}
+          />
         ))}
-        </main>
+      </main>
     </>
   );
 }
