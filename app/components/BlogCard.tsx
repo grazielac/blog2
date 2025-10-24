@@ -1,9 +1,9 @@
 import React from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 interface BlogCardProps {
   title: string;
-  image: string;
+  image: StaticImageData;
   description: string;
   author: string;
   date: string;

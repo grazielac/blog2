@@ -1,14 +1,18 @@
 import Nav from "./components/nav";
-import Feed from "./components/Feed";
 import BlogCard from "./components/BlogCard";
+import lovenote from "../public/lovenote.png";
 
 export default function Home() {
   return (
     <>
-     <Nav />
-     <Feed />
-     <BlogCard />
-
+      <Nav />
+      <BlogCard
+        title="How to make 3 million"
+        image={lovenote} 
+        description="Hey playboy it's about time"
+        author="Graziela Caringal"
+        date="October 24, 2025"
+      />
     </>
   );
 }
