@@ -6,16 +6,16 @@ export default function Home() {
   const posts = [
     {
         title:"My trip to barcelona",
-        image:{lovenote} 
-        description:"Hey playboy it's about time"
-        author:"Graziela Caringal"
+        image: lovenote,
+        description:"Hey playboy it's about time",
+        author:"Graziela Caringal",
         date:"October 24, 2025"
     },
      {
         title:"My trip to barcelona",
-        image:{lovenote} 
-        description:"Hey playboy it's about time"
-        author:"Graziela Caringal"
+        image: lovenote,
+        description:"Hey playboy it's about time",
+        author:"Graziela Caringal",
         date:"October 24, 2025"
     },
   ];
