@@ -7,6 +7,7 @@ interface BlogCardProps {
   description: string;
   author: string;
   date: string;
+  tags: string[];
 }
 
 function BlogCard({ title, image, description, author, date }: BlogCardProps) {

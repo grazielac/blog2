@@ -10,6 +10,7 @@ export default function Home() {
       description: "Hey playboy it's about time",
       author: "Graziela Caringal",
       date: "October 24, 2025",
+      tags: 
     },
     {
       title: "My trip to barcelona",
@@ -62,6 +63,7 @@ export default function Home() {
             date={post.date}
           />
         ))}
+        
       </main>
     </>
   );

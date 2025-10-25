@@ -7,7 +7,7 @@ function Nav() {
       <div className="text-sm flex gap-4 justify-around border-t-gray-400 border-b-gray-400 border-t border-b pt-8 pb-7">
         <Link href="/">Home</Link>
         <span>/</span>
-        <Link href="/">Personal</Link>
+        <Link href="/personal">Personal</Link>
         <span>/</span>
         <Link href="/">Lifestyle</Link>
         <span>/</span>
