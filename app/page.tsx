@@ -6,6 +6,8 @@ import BlogCard from "./components/BlogCard";
 import lovenote from "../public/lovenote.png";
 
 export default function Home() {
+  const [selectedTag, setSelectedTag] = useState();
+
   const posts = [
     {
       title: "My trip to barcelona",
@@ -21,7 +23,7 @@ export default function Home() {
       description: "Hey playboy it's about time",
       author: "Graziela Caringal",
       date: "October 24, 2025",
-      tags: ["TRAVEL, ", "PERSONAL"],
+      tags: ["WORK, ", "CAREER"],
     },
     {
       title: "My trip to barcelona",
@@ -29,7 +31,7 @@ export default function Home() {
       description: "Hey playboy it's about time",
       author: "Graziela Caringal",
       date: "October 24, 2025",
-      tags: ["TRAVEL, ", "PERSONAL"],
+      tags: ["CREATIVE, ", "PERSONAL"],
     },
     {
       title: "My trip to barcelona",
@@ -37,7 +39,7 @@ export default function Home() {
       description: "Hey playboy it's about time",
       author: "Graziela Caringal",
       date: "October 24, 2025",
-      tags: ["TRAVEL, ", "PERSONAL"],
+      tags: ["LIFESTYLE, ", "PERSONAL"],
     },
     {
       title: "My trip to barcelona",
@@ -57,11 +59,19 @@ export default function Home() {
     },
   ];
 
+  const filterPosts = selectedTag === null
+    ? posts
+    : posts.filter((post) =>
+      post.tags?.some(
+        (tag) => tag.toLowerCase() === selectedTag.toLowerCase()
+      )
+    );
+
   return (
     <>
-      <Nav />
+      <Nav onTagSelect={setSelectedTag} />
       <main className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-        {posts.map((post, index) => (
+        {filterPosts.map((post, index) => (
           <BlogCard
             key={index}
             title={post.title}
