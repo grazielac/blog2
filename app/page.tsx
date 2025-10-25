@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Nav from "./components/nav";
 import BlogCard from "./components/BlogCard";
+import { posts } from "./data/posts";
 
 export default function Home() {
   const [selectedTag, setSelectedTag] = useState<string | null>(null);

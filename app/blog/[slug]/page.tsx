@@ -1,31 +1,12 @@
 "use client";
 import { useParams } from "next/navigation";
-import Image, { StaticImageData } from "next/image";
-import lovenote from "../../../public/lovenote.png";
+import Image from "next/image";
+import { posts } from "../../data/posts";
+
 
 // dynamic blog post for each content
 
-interface Post {
-  slug: string;
-  title: string;
-  image: StaticImageData;
-  description: string;
-  author: string;
-  date: string;
-  content: string;
-}
 
-const posts: Post[] = [
-  {
-    slug: "my-trip-to-barcelona",
-    title: "My trip to Barcelona",
-    image: lovenote,
-    description: "Hello world u there",
-    author: "Graziela Caringal",
-    date: "October 25, 2025",
-    content: "Full content here...",
-  },
-];
 
 export default function BlogPost() {
   const { slug } = useParams();
