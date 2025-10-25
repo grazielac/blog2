@@ -6,7 +6,7 @@ import BlogCard from "./components/BlogCard";
 import lovenote from "../public/lovenote.png";
 
 export default function Home() {
-  const [selectedTag, setSelectedTag] = useState();
+  const [selectedTag, setSelectedTag] = useState<string | null>(null);
 
   const posts = [
     {
@@ -15,7 +15,7 @@ export default function Home() {
       description: "Hey playboy it's about time",
       author: "Graziela Caringal",
       date: "October 24, 2025",
-      tags: ["TRAVEL, ", "PERSONAL"],
+      tags: ["TRAVEL", "PERSONAL"],
     },
     {
       title: "My trip to barcelona",
@@ -23,7 +23,7 @@ export default function Home() {
       description: "Hey playboy it's about time",
       author: "Graziela Caringal",
       date: "October 24, 2025",
-      tags: ["WORK, ", "CAREER"],
+      tags: ["WORK", "CAREER"],
     },
     {
       title: "My trip to barcelona",
@@ -31,7 +31,7 @@ export default function Home() {
       description: "Hey playboy it's about time",
       author: "Graziela Caringal",
       date: "October 24, 2025",
-      tags: ["CREATIVE, ", "PERSONAL"],
+      tags: ["CREATIVE", "PERSONAL"],
     },
     {
       title: "My trip to barcelona",
@@ -39,7 +39,7 @@ export default function Home() {
       description: "Hey playboy it's about time",
       author: "Graziela Caringal",
       date: "October 24, 2025",
-      tags: ["LIFESTYLE, ", "PERSONAL"],
+      tags: ["LIFESTYLE", "PERSONAL"],
     },
     {
       title: "My trip to barcelona",
@@ -47,7 +47,7 @@ export default function Home() {
       description: "Hey playboy it's about time",
       author: "Graziela Caringal",
       date: "October 24, 2025",
-      tags: ["TRAVEL, ", "PERSONAL"],
+      tags: ["TRAVEL", "PERSONAL"],
     },
     {
       title: "My trip to barcelona",
@@ -55,11 +55,12 @@ export default function Home() {
       description: "Hey playboy it's about time",
       author: "Graziela Caringal",
       date: "October 24, 2025",
-      tags: ["TRAVEL, ", "PERSONAL"],
+      tags: ["TRAVEL", "PERSONAL"],
     },
   ];
 
-  const filterPosts = selectedTag === null
+  const filterPosts = 
+    !selectedTag
     ? posts
     : posts.filter((post) =>
       post.tags?.some(
