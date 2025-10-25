@@ -10,12 +10,14 @@ export default function Home() {
 
   const posts = [
     {
+      slug: "my-trip-to-barcelona",
       title: "My trip to barcelona",
       image: lovenote,
       description: "Hey playboy it's about time",
       author: "Graziela Caringal",
       date: "October 24, 2025",
       tags: ["TRAVEL", "PERSONAL"],
+      content: "Full blog content goes here..."
     },
     {
       title: "My trip to barcelona",
