@@ -1,8 +1,18 @@
 import { useParams } from "next/navigation";
-import Image from "next/image";
-import lovenote from "..lovenote.png";
+import Image, { StaticImageData } from "next/image";
+import lovenote from "../../public/lovenote.png";
 
 // dynamic blog post for each content
+
+interface Post {
+    slug: string;
+    title: string;
+    image: StaticImageData;
+    description: string;
+    author: string;
+    date: string;
+    content: string;
+}
 
 const posts = [
   {
