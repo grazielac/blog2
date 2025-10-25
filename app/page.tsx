@@ -1,70 +1,10 @@
 "use client";
 import { useState } from "react";
-
 import Nav from "./components/nav";
 import BlogCard from "./components/BlogCard";
-import lovenote from "../public/lovenote.png";
 
 export default function Home() {
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
-
-  const posts = [
-    {
-      slug: "my-trip-to-barcelona",
-      title: "My trip to barcelona",
-      image: lovenote,
-      description: "Hey playboy it's about time",
-      author: "Graziela Caringal",
-      date: "October 24, 2025",
-      tags: ["TRAVEL", "PERSONAL"],
-      content: "Full blog content goes here..."
-    },
-    {
-      slug: "my-trip-to-barcelona",
-      title: "My trip to barcelona",
-      image: lovenote,
-      description: "Hey playboy it's about time",
-      author: "Graziela Caringal",
-      date: "October 24, 2025",
-      tags: ["WORK", "CAREER"],
-    },
-    {
-      slug: "my-trip-to-barcelona",
-      title: "My trip to barcelona",
-      image: lovenote,
-      description: "Hey playboy it's about time",
-      author: "Graziela Caringal",
-      date: "October 24, 2025",
-      tags: ["CREATIVE", "PERSONAL"],
-    },
-    {
-      slug: "my-trip-to-barcelona",
-      title: "My trip to barcelona",
-      image: lovenote,
-      description: "Hey playboy it's about time",
-      author: "Graziela Caringal",
-      date: "October 24, 2025",
-      tags: ["LIFESTYLE", "PERSONAL"],
-    },
-    {
-      slug: "my-trip-to-barcelona",
-      title: "My trip to barcelona",
-      image: lovenote,
-      description: "Hey playboy it's about time",
-      author: "Graziela Caringal",
-      date: "October 24, 2025",
-      tags: ["TRAVEL", "PERSONAL"],
-    },
-    {
-      slug: "my-trip-to-barcelona",
-      title: "My trip to barcelona",
-      image: lovenote,
-      description: "Hey playboy it's about time",
-      author: "Graziela Caringal",
-      date: "October 24, 2025",
-      tags: ["TRAVEL", "PERSONAL"],
-    },
-  ];
 
   const filterPosts = 
     !selectedTag

@@ -1,17 +1,18 @@
+"use client";
 import { useParams } from "next/navigation";
 import Image, { StaticImageData } from "next/image";
-import lovenote from "../../public/lovenote.png";
+import lovenote from "../../../public/lovenote.png";
 
 // dynamic blog post for each content
 
 interface Post {
-    slug: string;
-    title: string;
-    image: StaticImageData;
-    description: string;
-    author: string;
-    date: string;
-    content: string;
+  slug: string;
+  title: string;
+  image: StaticImageData;
+  description: string;
+  author: string;
+  date: string;
+  content: string;
 }
 
 const posts: Post[] = [
@@ -26,7 +27,7 @@ const posts: Post[] = [
   },
 ];
 
- export default function BlogPost() {
+export default function BlogPost() {
   const { slug } = useParams();
   const post = posts.find((p) => p.slug === slug);
 
@@ -49,4 +50,3 @@ const posts: Post[] = [
     </div>
   );
 }
-
