@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <>
       <Nav onTagSelect={setSelectedTag} />
-      <main className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+      <main className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-stretch">
         <div className="col-span-full flex gap-4 mb-4">
           <Link href="/blog?sort=asc">Sort ascending</Link>
           <Link href="/blog?sort=desc">Sort descending</Link>
