@@ -10,11 +10,20 @@ interface BlogCardProps {
   tags?: string[];
 }
 
-function BlogCard({ title, image, description, author, date, tags }: BlogCardProps) {
+function BlogCard({
+  title,
+  image,
+  description,
+  author,
+  date,
+  tags,
+}: BlogCardProps) {
   return (
     <div className="border bg-white p-5 hover:shadow-lg transition duration-200 border-gray-100">
       <div className="flex flex-col items-center text-center">
-        <h2 className="p-5 text-2xl text-gray-700 font-semibold mb-2">{title}</h2>
+        <h2 className="p-5 text-2xl text-gray-700 font-semibold mb-2">
+          {title}
+        </h2>
         <Image
           src={image}
           alt={title}
@@ -28,10 +37,16 @@ function BlogCard({ title, image, description, author, date, tags }: BlogCardPro
           <p className="text-gray-500 mb-3">{author}</p>
           <p className="text-sm text-gray-500">{date}</p>
           <div className="pt-15 flex justify-between">
-            {tags.map((tag, index) => (
-              <span key={index} className="text-xs font-semibold text-gray-600">{tag}</span>
-            ))}
-            
+            {tags &&
+              tags.map((tag, index) => (
+                <span
+                  key={index}
+                  className="text-xs font-semibold text-gray-600"
+                >
+                  {tag}
+                </span>
+              ))}
+
             <p className="text-xs font-semibold text-gray-600">READ ME</p>
           </div>
         </div>
