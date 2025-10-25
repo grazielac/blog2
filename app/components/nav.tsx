@@ -1,7 +1,10 @@
 import React from "react";
-import Link from "next/link";
 
-function Nav() {
+interface NavProps {
+  onTagSelect: (tag: string | null) => void;
+}
+
+function Nav({ onTagSelect }: NavProps) {
   const tags = ["all", "personal", "travel", "career", "creative"];
 
   return (

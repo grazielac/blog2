@@ -5,7 +5,11 @@ import Nav from "./components/nav";
 import BlogCard from "./components/BlogCard";
 import lovenote from "../public/lovenote.png";
 
-export default function Home() {
+interface HomeProps {
+  onTagselect: (tag: string | null) => void;
+}
+
+export default function Home({ onTagSelect }: HomeProps) {
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
 
   const posts = [
