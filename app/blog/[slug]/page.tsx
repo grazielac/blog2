@@ -3,11 +3,7 @@ import { useParams } from "next/navigation";
 import Image from "next/image";
 import { posts } from "../../data/posts";
 
-
 // dynamic blog post for each content
-
-
-
 export default function BlogPost() {
   const { slug } = useParams();
   const post = posts.find((p) => p.slug === slug);

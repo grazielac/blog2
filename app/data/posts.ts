@@ -1,5 +1,14 @@
 import lovenote from "../../public/lovenote.png";
 import { StaticImageData } from "next/image";
+import fit from "../../public/fit.jpg";
+import letter from "../../public/letter.jpg";
+import painting from "../../public/painting.jpg";
+import pilates from "../../public/pilates.jpg";
+import travel from "../../public/travel.jpg";
+
+
+
+
 
 interface Post {
   slug: string;
@@ -26,7 +35,7 @@ export const posts: Post[] = [
   {
     slug: "my-trip-to-barcelona",
     title: "My trip to barcelona",
-    image: lovenote,
+    image: fit,
     description: "Hey playboy it's about time",
     author: "Graziela Caringal",
     date: "October 24, 2025",
@@ -36,7 +45,7 @@ export const posts: Post[] = [
   {
     slug: "im-broke",
     title: "im broke",
-    image: lovenote,
+    image: painting,
     description: "Hey playboy it's about time",
     author: "Graziela Caringal",
     date: "October 24, 2025",
@@ -46,7 +55,7 @@ export const posts: Post[] = [
   {
     slug: "my-trip-to-barcelona",
     title: "My trip to barcelona",
-    image: lovenote,
+    image: letter,
     description: "Hey playboy it's about time",
     author: "Graziela Caringal",
     date: "October 24, 2025",
@@ -56,7 +65,7 @@ export const posts: Post[] = [
   {
     slug: "my-trip-to-barcelona",
     title: "My trip to barcelona",
-    image: lovenote,
+    image: travel,
     description: "Hey playboy it's about time",
     author: "Graziela Caringal",
     date: "October 24, 2025",
@@ -76,7 +85,7 @@ export const posts: Post[] = [
   {
     slug: "my-trip-to-barcelona",
     title: "My trip to barcelona",
-    image: lovenote,
+    image: pilates,
     description: "Hey playboy it's about time",
     author: "Graziela Caringal",
     date: "October 24, 2025",
