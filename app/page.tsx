@@ -10,7 +10,7 @@ export default function Home() {
       description: "Hey playboy it's about time",
       author: "Graziela Caringal",
       date: "October 24, 2025",
-      tags: 
+      tags: ["TRAVEL, ", "PERSONAL"],
     },
     {
       title: "My trip to barcelona",
@@ -18,6 +18,7 @@ export default function Home() {
       description: "Hey playboy it's about time",
       author: "Graziela Caringal",
       date: "October 24, 2025",
+      tags: ["TRAVEL, ", "PERSONAL"],
     },
     {
       title: "My trip to barcelona",
@@ -25,6 +26,7 @@ export default function Home() {
       description: "Hey playboy it's about time",
       author: "Graziela Caringal",
       date: "October 24, 2025",
+      tags: ["TRAVEL, ", "PERSONAL"],
     },
     {
       title: "My trip to barcelona",
@@ -32,6 +34,7 @@ export default function Home() {
       description: "Hey playboy it's about time",
       author: "Graziela Caringal",
       date: "October 24, 2025",
+      tags: ["TRAVEL, ", "PERSONAL"],
     },
     {
       title: "My trip to barcelona",
@@ -39,6 +42,7 @@ export default function Home() {
       description: "Hey playboy it's about time",
       author: "Graziela Caringal",
       date: "October 24, 2025",
+      tags: ["TRAVEL, ", "PERSONAL"],
     },
     {
       title: "My trip to barcelona",
@@ -46,6 +50,7 @@ export default function Home() {
       description: "Hey playboy it's about time",
       author: "Graziela Caringal",
       date: "October 24, 2025",
+      tags: ["TRAVEL, ", "PERSONAL"],
     },
   ];
 
@@ -61,6 +66,7 @@ export default function Home() {
             description={post.description}
             author={post.author}
             date={post.date}
+            tags={post.tags}
           />
         ))}
         
