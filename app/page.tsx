@@ -1,3 +1,6 @@
+"use client";
+import { useState } from "react";
+
 import Nav from "./components/nav";
 import BlogCard from "./components/BlogCard";
 import lovenote from "../public/lovenote.png";
