@@ -28,13 +28,14 @@ function BlogCard({
           <h2 className="p-5 text-2xl text-gray-700 font-semibold mb-2">
             {title}
           </h2>
+          <div className="relative w-[400px] h-[500px] mb-5">
           <Image
             src={image}
             alt={title}
-            width={400}
-            height={300}
-            className="w-3/4 h-auto mb-5 object-cover"
+            fill
+            className="rounded object-cover"
           />
+          </div>
 
           <div className="p-2 pt-10">
             <p className="text-gray-500 mb-3">{description}</p>

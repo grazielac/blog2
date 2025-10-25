@@ -1,14 +1,10 @@
-import lovenote from "../../public/lovenote.png";
 import { StaticImageData } from "next/image";
-import fit from "../../public/fit.jpg";
 import letter from "../../public/letter.jpg";
 import painting from "../../public/painting.jpg";
 import pilates from "../../public/pilates.jpg";
+import interior from "../../public/interior.jpg";
 import travel from "../../public/travel.jpg";
-
-
-
-
+import fashion from "../../public/fashion.jpg";
 
 interface Post {
   slug: string;
@@ -23,9 +19,9 @@ interface Post {
 
 export const posts: Post[] = [
   {
-    slug: "my-trip-to-barcelona",
-    title: "My trip to Barcelona",
-    image: lovenote,
+    slug: "interior-design-ideas",
+    title: "Interior Design Ideas for Small Spaces",
+    image: interior,
     description: "Hello world u there",
     author: "Graziela Caringal",
     date: "October 25, 2025",
@@ -33,17 +29,17 @@ export const posts: Post[] = [
     tags: ["TRAVEL"],
   },
   {
-    slug: "my-trip-to-barcelona",
-    title: "My trip to barcelona",
-    image: fit,
-    description: "Hey playboy it's about time",
+    slug: "fall-fashion-trends-2025",
+    title: "Fall Fashion Trends 2025",
+    image: fashion,
+    description: "Explore the hottest trends this fall, from cozy layers to statement accessories.",
     author: "Graziela Caringal",
     date: "October 24, 2025",
     tags: ["TRAVEL", "PERSONAL"],
     content: "Full blog content goes here...",
   },
   {
-    slug: "im-broke",
+    slug: "classical-painting",
     title: "im broke",
     image: painting,
     description: "Hey playboy it's about time",
@@ -53,8 +49,8 @@ export const posts: Post[] = [
     content: "Full content here...",
   },
   {
-    slug: "my-trip-to-barcelona",
-    title: "My trip to barcelona",
+    slug: "writing-personal-letters",
+    title: "Writing Personal Letters in a Digital Age",
     image: letter,
     description: "Hey playboy it's about time",
     author: "Graziela Caringal",
@@ -63,8 +59,8 @@ export const posts: Post[] = [
     content: "Full content here...",
   },
   {
-    slug: "my-trip-to-barcelona",
-    title: "My trip to barcelona",
+    slug: "travel-guide-europe",
+    title: "The Ultimate Travel Guide to Europe",
     image: travel,
     description: "Hey playboy it's about time",
     author: "Graziela Caringal",
@@ -73,20 +69,10 @@ export const posts: Post[] = [
     content: "Full content here...",
   },
   {
-    slug: "my-trip-to-barcelona",
-    title: "My trip to barcelona",
-    image: lovenote,
-    description: "Hey playboy it's about time",
-    author: "Graziela Caringal",
-    date: "October 24, 2025",
-    tags: ["TRAVEL", "PERSONAL"],
-    content: "Full content here...",
-  },
-  {
-    slug: "my-trip-to-barcelona",
-    title: "My trip to barcelona",
+    slug: "morning-pilates-routine",
+    title: "My Morning Pilates Routine",
     image: pilates,
-    description: "Hey playboy it's about time",
+    description: "Discover how a 20-minute Pilates routine keeps me energized and focused every day.",
     author: "Graziela Caringal",
     date: "October 24, 2025",
     tags: ["TRAVEL", "PERSONAL"],
