@@ -20,6 +20,7 @@ export default function Home() {
       content: "Full blog content goes here..."
     },
     {
+      slug: "my-trip-to-barcelona",
       title: "My trip to barcelona",
       image: lovenote,
       description: "Hey playboy it's about time",
@@ -28,6 +29,7 @@ export default function Home() {
       tags: ["WORK", "CAREER"],
     },
     {
+      slug: "my-trip-to-barcelona",
       title: "My trip to barcelona",
       image: lovenote,
       description: "Hey playboy it's about time",
@@ -36,6 +38,7 @@ export default function Home() {
       tags: ["CREATIVE", "PERSONAL"],
     },
     {
+      slug: "my-trip-to-barcelona",
       title: "My trip to barcelona",
       image: lovenote,
       description: "Hey playboy it's about time",
@@ -44,6 +47,7 @@ export default function Home() {
       tags: ["LIFESTYLE", "PERSONAL"],
     },
     {
+      slug: "my-trip-to-barcelona",
       title: "My trip to barcelona",
       image: lovenote,
       description: "Hey playboy it's about time",
@@ -52,6 +56,7 @@ export default function Home() {
       tags: ["TRAVEL", "PERSONAL"],
     },
     {
+      slug: "my-trip-to-barcelona",
       title: "My trip to barcelona",
       image: lovenote,
       description: "Hey playboy it's about time",
@@ -77,6 +82,7 @@ export default function Home() {
         {filterPosts.map((post, index) => (
           <BlogCard
             key={index}
+            slug={post.slug}
             title={post.title}
             image={post.image}
             description={post.description}

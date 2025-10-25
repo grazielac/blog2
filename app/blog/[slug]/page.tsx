@@ -14,7 +14,7 @@ interface Post {
     content: string;
 }
 
-const posts = [
+const posts: Post[] = [
   {
     slug: "my-trip-to-barcelona",
     title: "My trip to Barcelona",
@@ -26,7 +26,7 @@ const posts = [
   },
 ];
 
-function BlogPost() {
+ export default function BlogPost() {
   const { slug } = useParams();
   const post = posts.find((p) => p.slug === slug);
 
@@ -50,4 +50,3 @@ function BlogPost() {
   );
 }
 
-export default BlogPost

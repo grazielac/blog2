@@ -38,8 +38,10 @@ function BlogCard({
 
           <div className="p-2 pt-10">
             <p className="text-gray-500 mb-3">{description}</p>
-            <p className="text-gray-500 mb-3">{author}</p>
-            <p className="text-sm text-gray-500">{date}</p>
+            <p className="text-gray-500 mb-3">
+              {author} - {date}
+            </p>
+
             <div className="pt-15 flex justify-between">
               {tags &&
                 tags.map((tag, index) => (
