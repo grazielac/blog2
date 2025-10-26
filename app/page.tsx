@@ -3,8 +3,8 @@ import { useState } from "react";
 import Nav from "./components/nav";
 import BlogCard from "./components/BlogCard";
 import { posts } from "./data/posts";
-
 import SortDropdown from "./components/SortDropdown";
+import NewPost from "./components/NewPost";
 
 export default function Home() {
   // sort
@@ -30,7 +30,11 @@ export default function Home() {
   return (
     <>
       <Nav onTagSelect={setSelectedTag} />
-      <SortDropdown onChange={setSortOrder} />
+      <div className=" w-full px-5 flex justify-between items-center mb-4">
+        <SortDropdown onChange={setSortOrder} />
+        
+        <NewPost />
+      </div>
 
       <main className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-stretch">
         {filterPosts.map((post) => (

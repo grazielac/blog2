@@ -15,14 +15,14 @@ function SortDropdown({ onChange }: SortDropdownProps) {
   };
 
   return (
-    <div className="mb-4">
+    <div className="mb-4 flex w-full">
       <label className="text-sm bg-gray-200 py-2 px-2 rounded-2xl p-8 m-5">
         Sort by date:
       </label>
       <select
         value={value}
         onChange={handleChange}
-        className="text-sm bg-gray-200 py-5 px-5 rounded-2xl m-5"
+        className="text-sm bg-gray-200 py-2 px-4 rounded-2xl m-5"
       >
         <option value="asc">Oldest first</option>
         <option value="desc">Newest first</option>
