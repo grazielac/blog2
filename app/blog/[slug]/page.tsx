@@ -4,18 +4,19 @@ import { posts } from "../../data/posts";
 import { cormorant } from "../../fonts/cormorant";
 import AddComment from "@/app/components/AddComment";
 import { useState } from "react";
-import { useParams } from "next/navigation";
 import HomeButton from "@/app/components/HomeButton";
 
-
+interface BlogPostProps {
+  postId: string;
+}
 // dynamic blog post for each content
-export default function BlogPost() {
+export default function BlogPost({ postId }: BlogPostProps) {
   // find post by slug
-  const { slug } = useParams() as { slug: string };
-  const post = posts.find((p) => p.slug === slug);
+  // const { postId } = useParams() as { postId: string };
+  const post = posts.find((p) => p.slug === postId);
   const [comments, setComments] = useState<string[]>([]);
 
-  console.log("postId:", slug);
+  console.log("postId:", postId);
   console.log("posts:", posts);
 
   if (!post) return <p>Post not found</p>;

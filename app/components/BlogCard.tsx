@@ -11,6 +11,7 @@ interface BlogCardProps {
   tags?: string[];
   slug: string;
   bgColor: string;
+
 }
 
 function BlogCard({
