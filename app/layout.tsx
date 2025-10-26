@@ -3,7 +3,7 @@ import "./globals.css";
 import localFont from "next/font/local";
 
 const madeMIrage = localFont({
-  src: "../public/fonts/myfont.otf",
+  src: "../public/fonts/made-mirage-regular.otf",
   variable: "--font-made-mirage",
   style: "normal",
 });
