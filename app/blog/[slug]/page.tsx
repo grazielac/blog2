@@ -5,7 +5,8 @@ import { cormorant } from "../../fonts/cormorant";
 import AddComment from "@/app/components/AddComment";
 import { useState } from "react";
 import { useParams } from "next/navigation";
-import Nav from "@/app/components/nav";
+import HomeButton from "@/app/components/HomeButton";
+
 
 // dynamic blog post for each content
 export default function BlogPost() {
@@ -25,7 +26,7 @@ export default function BlogPost() {
 
   return (
     <>
-     <Nav />
+     <HomeButton />
     <div className="max-w-3xl mx-auto p-8">
       <h1 className={`${cormorant.className} text-4xl font-bold mb-4`}>
         {post.title}
