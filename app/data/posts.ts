@@ -36,7 +36,7 @@ export const posts: Post[] = [
     image: travel,
     description: "Hey playboy it's about time",
     author: "Graziela Caringal",
-    date: "October 24, 2025",
+    date: "October 25, 2025",
     tags: ["TRAVEL"],
 
     bgColor: "#CFE0E9"
@@ -48,7 +48,7 @@ export const posts: Post[] = [
     description:
       "Discover how a 20-minute Pilates routine keeps me energized and focused every day.",
     author: "Graziela Caringal",
-    date: "October 24, 2025",
+    date: "October 26, 2025",
     tags: ["PERSONAL"],
     bgColor: "#FAF2D3"
   },
@@ -59,7 +59,7 @@ export const posts: Post[] = [
     description:
       "Maximize your space with clever design tips and creative decor ideas.",
     author: "Graziela Caringal",
-    date: "October 25, 2025",
+    date: "October 27, 2025",
     tags: ["INTERIOR"],
     bgColor: "#CFE0E9"
   },
@@ -70,7 +70,7 @@ export const posts: Post[] = [
     description:
       "Explore the hottest trends this fall, from cozy layers to statement accessories.",
     author: "Graziela Caringal",
-    date: "October 26, 2025",
+    date: "October 28, 2025",
     tags: ["FASHION"],
     bgColor: "#FAF2D3"
   },
@@ -81,7 +81,7 @@ export const posts: Post[] = [
     description:
       "A guide to innovative painting styles and techniques for artists at any level.",
     author: "Graziela Caringal",
-    date: "October 27, 2025",
+    date: "October 29, 2025",
     tags: ["CREATIVE", "PERSONAL"],
     bgColor: "#CFE0E9"
   },

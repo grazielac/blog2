@@ -5,10 +5,10 @@ import BlogCard from "./components/BlogCard";
 import { posts } from "./data/posts";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
+import SortDropdown from "./components/SortDropdown";
 
 export default function Home() {
-
-// sort
+  // sort
   const searchParams = useSearchParams();
   const query = searchParams.get("sort");
   const sortedPosts = query === "desc" ? [...posts].reverse() : posts;
@@ -24,10 +24,10 @@ export default function Home() {
         )
       );
 
-
   return (
     <>
       <Nav onTagSelect={setSelectedTag} />
+      <SortDropdown />
       <div className="flex ">
         <div className="col-span-full flex gap-4 mb-4">
           <p className="text-sm bg-gray-200 py-2 px-2 rounded-2xl p-8 m-5">
@@ -53,7 +53,6 @@ export default function Home() {
             title={post.title}
             image={post.image}
             description={post.description}
-            author={post.author}
             date={post.date}
             tags={post.tags}
             bgColor={post.bgColor}
