@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
 
-const madeMIrage = localFont({
+const madeMirage = localFont({
   src: "../public/fonts/made-mirage-regular.otf",
   variable: "--font-made-mirage",
   style: "normal",
@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${madeMIrage.variable} antialiased`}
+        className={`${madeMirage.variable} antialiased`}
       >
         {children}
       </body>
