@@ -28,7 +28,6 @@ export const posts: Post[] = [
     author: "Graziela Caringal",
     date: "October 24, 2025",
     tags: ["PERSONAL"],
-    content: "Full content here...",
     bgColor: "#FAF2D3"
   },
   {
@@ -39,7 +38,7 @@ export const posts: Post[] = [
     author: "Graziela Caringal",
     date: "October 24, 2025",
     tags: ["TRAVEL"],
-    content: "Full content here...",
+
     bgColor: "#CFE0E9"
   },
   {
@@ -51,7 +50,6 @@ export const posts: Post[] = [
     author: "Graziela Caringal",
     date: "October 24, 2025",
     tags: ["PERSONAL"],
-    content: "Full content here...",
     bgColor: "#FAF2D3"
   },
   {
@@ -62,7 +60,6 @@ export const posts: Post[] = [
       "Maximize your space with clever design tips and creative decor ideas.",
     author: "Graziela Caringal",
     date: "October 25, 2025",
-    content: "Full content here...",
     tags: ["INTERIOR"],
     bgColor: "#CFE0E9"
   },
@@ -75,7 +72,6 @@ export const posts: Post[] = [
     author: "Graziela Caringal",
     date: "October 26, 2025",
     tags: ["FASHION"],
-    content: "Full blog content goes here...",
     bgColor: "#FAF2D3"
   },
   {
@@ -87,7 +83,6 @@ export const posts: Post[] = [
     author: "Graziela Caringal",
     date: "October 27, 2025",
     tags: ["CREATIVE", "PERSONAL"],
-    content: "Full content here...",
     bgColor: "#CFE0E9"
   },
 

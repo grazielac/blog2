@@ -7,7 +7,6 @@ interface BlogCardProps {
   title: string;
   image: StaticImageData;
   description: string;
-  author?: string;
   date: string;
   tags?: string[];
   slug: string;
@@ -18,7 +17,6 @@ function BlogCard({
   title,
   image,
   description,
-  author,
   date,
   tags,
   slug,

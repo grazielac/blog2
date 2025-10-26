@@ -1,18 +1,35 @@
 "use client";
-import { useParams } from "next/navigation";
 import Image from "next/image";
 import { posts } from "../../data/posts";
+import { cormorant } from "../../fonts/cormorant";
+import AddComment from "@/app/components/AddComment";
+import { useState } from "react";
+import { useParams } from "next/navigation";
+import Nav from "@/app/components/nav";
 
 // dynamic blog post for each content
 export default function BlogPost() {
-  const { slug } = useParams();
+  // find post by slug
+  const { slug } = useParams() as { slug: string };
   const post = posts.find((p) => p.slug === slug);
+  const [comments, setComments] = useState<string[]>([]);
+
+  console.log("postId:", slug);
+  console.log("posts:", posts);
 
   if (!post) return <p>Post not found</p>;
 
+  const handleAddComment = (comment: string) => {
+    setComments((prev) => [...prev, comment]);
+  };
+
   return (
+    <>
+     <Nav />
     <div className="max-w-3xl mx-auto p-8">
-      <h1 className="text-4xl font-bold mb-4">{post.title}</h1>
+      <h1 className={`${cormorant.className} text-4xl font-bold mb-4`}>
+        {post.title}
+      </h1>
       <p className="text-gray-500 mb-2">
         {post.author} - {post.date}
       </p>
@@ -24,6 +41,23 @@ export default function BlogPost() {
         className="object-cover mb-5"
       />
       <p className="text-gray-700">{post.content}</p>
+      <AddComment onSubmit={handleAddComment} />
+
+      <ul className="mt-4 space-y-2">
+        {comments.length === 0 && (
+          <p className="text-gray-500">No comments yet.</p>
+        )}
+        {comments.map((comment, index) => (
+          <li
+            key={index}
+            className="border border-gray-200 rounded p-2 bg-gray-50"
+          >
+            {comment}
+          </li>
+        ))}
+      </ul>
     </div>
+  
+  </>
   );
 }
