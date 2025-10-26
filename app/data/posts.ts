@@ -19,6 +19,38 @@ interface Post {
 
 export const posts: Post[] = [
   {
+    slug: "writing-personal-letters",
+    title: "Writing Personal Letters in a Digital Age",
+    image: letter,
+    description:
+      "Tips for crafting heartfelt letters that leave a lasting impression.",
+    author: "Graziela Caringal",
+    date: "October 24, 2025",
+    tags: ["personal"],
+    content: "Full content here...",
+  },
+  {
+    slug: "travel-guide-europe",
+    title: "The Ultimate Travel Guide to Europe",
+    image: travel,
+    description: "Hey playboy it's about time",
+    author: "Graziela Caringal",
+    date: "October 24, 2025",
+    tags: ["travel"],
+    content: "Full content here...",
+  },
+  {
+    slug: "morning-pilates-routine",
+    title: "My Morning Pilates Routine",
+    image: pilates,
+    description:
+      "Discover how a 20-minute Pilates routine keeps me energized and focused every day.",
+    author: "Graziela Caringal",
+    date: "October 24, 2025",
+    tags: ["personal"],
+    content: "Full content here...",
+  },
+  {
     slug: "interior-design-ideas",
     title: "Interior Design Ideas for Small Spaces",
     image: interior,
@@ -51,36 +83,5 @@ export const posts: Post[] = [
     tags: ["creative"],
     content: "Full content here...",
   },
-  {
-    slug: "writing-personal-letters",
-    title: "Writing Personal Letters in a Digital Age",
-    image: letter,
-    description:
-      "Tips for crafting heartfelt letters that leave a lasting impression.",
-    author: "Graziela Caringal",
-    date: "October 24, 2025",
-    tags: ["personal"],
-    content: "Full content here...",
-  },
-  {
-    slug: "travel-guide-europe",
-    title: "The Ultimate Travel Guide to Europe",
-    image: travel,
-    description: "Hey playboy it's about time",
-    author: "Graziela Caringal",
-    date: "October 24, 2025",
-    tags: ["travel"],
-    content: "Full content here...",
-  },
-  {
-    slug: "morning-pilates-routine",
-    title: "My Morning Pilates Routine",
-    image: pilates,
-    description:
-      "Discover how a 20-minute Pilates routine keeps me energized and focused every day.",
-    author: "Graziela Caringal",
-    date: "October 24, 2025",
-    tags: ["personal"],
-    content: "Full content here...",
-  },
+
 ];
