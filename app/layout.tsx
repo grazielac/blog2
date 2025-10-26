@@ -3,9 +3,9 @@ import "./globals.css";
 import localFont from "next/font/local";
 
 const madeMirage = localFont({
-  src: "../public/fonts/made-mirage-regular.otf",
+  src: "./fonts/made-mirage-regular.otf",
   variable: "--font-made-mirage",
-  style: "normal",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
