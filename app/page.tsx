@@ -41,6 +41,7 @@ export default function Home() {
             author={post.author}
             date={post.date}
             tags={post.tags}
+            bgColor={post.bgColor}
           />
         ))}
       </main>

@@ -20,8 +20,8 @@
 }
 
 body {
-  background: var(--background);
+  background:#F9F5EA;
   color: var(--foreground);
-  font-family: var(--font-made-mirage), sans-serif;
+
 
 }

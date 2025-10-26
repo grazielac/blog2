@@ -15,6 +15,7 @@ interface Post {
   date: string;
   content?: string;
   tags: string[];
+  bgColor: string;
 }
 
 export const posts: Post[] = [
@@ -26,8 +27,9 @@ export const posts: Post[] = [
       "Tips for crafting heartfelt letters that leave a lasting impression.",
     author: "Graziela Caringal",
     date: "October 24, 2025",
-    tags: ["personal"],
+    tags: ["PERSONAL"],
     content: "Full content here...",
+    bgColor: "#FAF2D3"
   },
   {
     slug: "travel-guide-europe",
@@ -36,8 +38,9 @@ export const posts: Post[] = [
     description: "Hey playboy it's about time",
     author: "Graziela Caringal",
     date: "October 24, 2025",
-    tags: ["travel"],
+    tags: ["TRAVEL"],
     content: "Full content here...",
+    bgColor: "#CFE0E9"
   },
   {
     slug: "morning-pilates-routine",
@@ -47,8 +50,9 @@ export const posts: Post[] = [
       "Discover how a 20-minute Pilates routine keeps me energized and focused every day.",
     author: "Graziela Caringal",
     date: "October 24, 2025",
-    tags: ["personal"],
+    tags: ["PERSONAL"],
     content: "Full content here...",
+    bgColor: "#FAF2D3"
   },
   {
     slug: "interior-design-ideas",
@@ -59,7 +63,8 @@ export const posts: Post[] = [
     author: "Graziela Caringal",
     date: "October 25, 2025",
     content: "Full content here...",
-    tags: ["interior"],
+    tags: ["INTERIOR"],
+    bgColor: "#CFE0E9"
   },
   {
     slug: "fall-fashion-trends-2025",
@@ -69,8 +74,9 @@ export const posts: Post[] = [
       "Explore the hottest trends this fall, from cozy layers to statement accessories.",
     author: "Graziela Caringal",
     date: "October 26, 2025",
-    tags: ["fashion"],
+    tags: ["FASHION"],
     content: "Full blog content goes here...",
+    bgColor: "#FAF2D3"
   },
   {
     slug: "classical-painting",
@@ -80,8 +86,9 @@ export const posts: Post[] = [
       "A guide to innovative painting styles and techniques for artists at any level.",
     author: "Graziela Caringal",
     date: "October 27, 2025",
-    tags: ["creative"],
+    tags: ["CREATIVE", "PERSONAL"],
     content: "Full content here...",
+    bgColor: "#CFE0E9"
   },
 
 ];

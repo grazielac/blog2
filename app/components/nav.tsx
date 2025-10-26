@@ -5,7 +5,7 @@ interface NavProps {
 }
 
 function Nav({ onTagSelect }: NavProps) {
-  const tags = ["all", "personal", "travel", "career", "creative"];
+  const tags = ["all", "personal", "travel", "fashion", "creative", "interior"];
 
   return (
     <div>
