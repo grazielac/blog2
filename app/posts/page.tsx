@@ -1,5 +1,5 @@
 import BlogPost from "../blog/[slug]/page";
 
-export default function BlogPostPage({ params }: { params: { slug: string }}) {
+export default function BlogPostPage() {
     return <BlogPost />;
 }
